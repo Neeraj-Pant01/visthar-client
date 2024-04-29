@@ -1,0 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg-speaker{
+    background-image: linear-gradient(#ffffff, #e6ecff);
+}

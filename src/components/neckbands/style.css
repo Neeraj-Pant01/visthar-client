@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.neckband-bg{
+    background-image: linear-gradient(#ffffff, #f2edff);
+}
