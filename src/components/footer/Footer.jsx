@@ -28,17 +28,17 @@ const Footer = () => {
     }
   return (
     <div className='flex flex-col'>
-      <div className='flex justify-between bg-[#e7f0f5] py-10 md:px-16'>
-        <div className=' flex flex-col'>
-            <span className='text-7xl'>Visthar</span>
-            <span className='text-2xl mt-2 font-semibold'>Subscribe TO Our Email Alerts</span>
-            <div className='flex items-center bg-[white] rounded-lg'>
+      <div className='flex flex-col md:flex-row justify-between px-8 bg-[#e7f0f5] py-10 md:px-16'>
+        <div className=' flex flex-col md:justify-normal justify-center items-center md:items-start'>
+            <span className='md:text-7xl text-5xl'>Visthar</span>
+            <span className='md:text-2xl mt-2 font-semibold'>Subscribe TO Our Email Alerts</span>
+            <div className='flex w-[80%] items-center bg-[white] rounded-lg mt-3 md:mt-0'>
             <input type='text'  className='bg-[white] py-3 px-5 border-0 outline-none rounded-lg' placeholder='enter your email address'/>
             <FaCircleArrowRight className='cursor-pointer'/>
             </div>
         </div>
 
-        <div className='flex  md:gap-20'>
+        <div className='flex  md:gap-20 mt-5 md:mt-0'>
         <div className=' flex flex-col'>
             <span className='mb-2 font-semibold'>Shop</span>
             {
@@ -85,7 +85,7 @@ const Footer = () => {
         </div>
         
       </div>
-      <div className='flex md:px-16 bg-[#ecf0f2] justify-evenly'>
+      <div className='hidden md:flex flex-col md:flex-row md:px-16 bg-[#ecf0f2] justify-evenly'>
 
         <div className='flex flex-col gap-6'>
             <div className='flex flex-col gap-2'>

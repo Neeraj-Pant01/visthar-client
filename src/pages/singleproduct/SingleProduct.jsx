@@ -34,15 +34,15 @@ const SingleProduct = () => {
         }
     }
     return (
-        <div className='flex flex-col px-12 min-h-screen'>
+        <div className='flex flex-col px-4 md:px-12 min-h-screen'>
             <div className='flex items-center text-[grey] text-sm gap-3 h-[50px]'>
                 <span className='cursor-pointer'>Home</span ><MdKeyboardArrowRight />
                 <span className='cursor-pointer'>Categories</span><MdKeyboardArrowRight />
                 <span className='cursor-pointer'>ProductName</span>
             </div>
-            <div className='flex mt-8 mb-10'>
-                <div className='flex-1 flex sticky top-[100px] h-[640px] gap-5'>
-                    <div className='flex flex-col w-[80px] gap-6'>
+            <div className='flex flex-col md:flex-row mt-8 mb-10'>
+                <div className='flex-1 flex md:sticky top-[100px] h-[640px] gap-5'>
+                    <div className='hidden md:flex flex-col w-[80px] gap-6'>
                         {
                             images.map((pic, i) => {
                                 return (
@@ -65,10 +65,10 @@ const SingleProduct = () => {
                         |
                         <span className=''>1000 Reviews</span>
                     </div>
-                    <div className='text-2xl font-semibold'>
+                    <div className='md:text-2xl text-xl font-semibold'>
                         ProductName
                     </div>
-                    <div className='text-[grey]'>
+                    <div className='text-[grey] text-sm md:text-[16px'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium doloribus, sapiente hic temporibus saepe cupiditate autem deleniti quam at itaque!
                     </div>
                     <div className='flex items-center gap-3'>
@@ -82,10 +82,10 @@ const SingleProduct = () => {
                     <ColorPicker />
                     <div className='flex flex-col font-semibold mt-3'>
                         Check Delivery
-                        <div className='flex py-4 flex-col bg-[#d2e2e8] px-8 w-max'>
-                            <div className='flex items-center rounded-lg py-1 bg-[white] justify-between gap-8'>
-                            <input type='text' placeholder='enter pin code' className='outline-none py-2 rounded-lg px-5' />
-                            <button className='py-3 px-2 rounded-lg bg-[black] text-[white]'>Check Delivery</button>
+                        <div className='flex md:py-4 flex-col bg-[#d2e2e8] md:px-8 md:w-max w-[100%] px-2 py-2'>
+                            <div className='flex items-center rounded-lg py-1 bg-[white] justify-between md:gap-8'>
+                            <input type='text' placeholder='enter pin code' className='outline-none md:py-2 py-1 px-2 rounded-lg md:px-5' />
+                            <button className='md:py-3 md:px-2 rounded-lg bg-[black] text-[white] text-sm'>Check Delivery</button>
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@ const SingleProduct = () => {
 
                         <div className='flex flex-col'>
                             <span className='text-[grey] font-semibold text-xl mt-5'>Add a Review</span>
-                            <textarea placeholder='add your review' className='py-4 px-5 h-[150px] outline-none border border-[black] resize-none rounded-lg w-[60%]'/>
+                            <textarea placeholder='add your review' className='py-4 px-5 h-[150px] outline-none border border-[black] resize-none rounded-lg md:w-[60%] w-[100%]'/>
                             <div className='flex gap-3 mt-4'>
                                 {
                                     Array.from({length:5}).map((_,i)=>{

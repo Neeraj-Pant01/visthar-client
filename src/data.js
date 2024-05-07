@@ -1,0 +1,61 @@
+export const Navcategories = [
+    {
+        title:"earBuds",
+        img:"https://www.boat-lifestyle.com/cdn/shop/collections/dropdown-TWS_100x.png?v=1684827062"
+    },
+    {
+        title:"Charger",
+        img:"/pImages/p1.jpeg"
+    },
+    {
+        title:"PowerBanks",
+        img:"/pImages/p15.jpeg"
+    },
+    {
+        title:"HeadPhones",
+        img:"https://www.boat-lifestyle.com/cdn/shop/files/Wireless-Headphones_small.png?v=1684842854"
+    },
+    {
+        title:"Speakers",
+        img:"https://media.istockphoto.com/id/626428378/photo/wireless-portable-speaker.jpg?s=612x612&w=0&k=20&c=zfEmfKGQRKSatPzKyT7mqZzBJQfl_965qerjQnH0LVs="
+    }
+]
+
+export const shopcategories = [
+    {
+        img:"https://www.boat-lifestyle.com/cdn/shop/collections/dropdown-TWS_100x.png?v=1684827062",
+        title:"earbuds"
+    },
+    {
+        title:"Charger",
+        img:"/pImages/p1.jpeg"
+    },
+    {
+        title:"PowerBanks",
+        img:"/pImages/p15.jpeg"
+    },
+    {
+        title:"HeadPhones",
+        img:"https://www.boat-lifestyle.com/cdn/shop/files/Wireless-Headphones_small.png?v=1684842854"
+    },
+    {
+        title:"Speakers",
+        img:"https://media.istockphoto.com/id/626428378/photo/wireless-portable-speaker.jpg?s=612x612&w=0&k=20&c=zfEmfKGQRKSatPzKyT7mqZzBJQfl_965qerjQnH0LVs="
+    },
+    {
+        title:"Charger",
+        img:"/pImages/p1.jpeg"
+    },
+    {
+        title:"PowerBanks",
+        img:"/pImages/p15.jpeg"
+    },
+    {
+        title:"HeadPhones",
+        img:"https://www.boat-lifestyle.com/cdn/shop/files/Wireless-Headphones_small.png?v=1684842854"
+    },
+    {
+        title:"Speakers",
+        img:"https://media.istockphoto.com/id/626428378/photo/wireless-portable-speaker.jpg?s=612x612&w=0&k=20&c=zfEmfKGQRKSatPzKyT7mqZzBJQfl_965qerjQnH0LVs="
+    }
+]

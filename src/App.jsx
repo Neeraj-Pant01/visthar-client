@@ -8,6 +8,8 @@ import Cart from './pages/cart/Cart'
 import {createBrowserRouter, Outlet, RouterProvider} from "react-router-dom"
 import Login from './pages/login/Login'
 import Register from './pages/register/Register'
+import Orders from './pages/myOrders/Orders'
+import Visthar from './pages/visthar/Visthar'
 
 
 const Layout = () =>{
@@ -32,12 +34,20 @@ const App = () => {
           element : <Homepage />
         },
         {
+          path: "/orders",
+          element: <Orders />
+        },
+        {
           path : "/products",
           element : <Products />
         },
         {
           path : "/product/:id",
           element : <SingleProduct />
+        },
+        {
+          path: "/visthar",
+          element: <Visthar />
         },
         {
           path : "/cart",
