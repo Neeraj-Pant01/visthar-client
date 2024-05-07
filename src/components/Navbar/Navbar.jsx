@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiOutlineMenu, AiOutlineSearch } from "react-icons/ai"
+import { AiOutlineClose, AiOutlineMenu, AiOutlineSearch } from "react-icons/ai"
 import { MdOutlinePerson2 } from "react-icons/md";
 import { IoBagOutline } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
@@ -20,15 +20,20 @@ const Navbar = () => {
     }
 
     return (
-        <div className='flex z-50 bg-[white] h-[80px] border py-4 px-10 items-center justify-between sticky top-0 md:gap-20'>
+        <div className='flex z-50 bg-[white] md:h-[80px] border py-4 md:px-10 px-5 items-center justify-between sticky top-0 md:gap-20'>
             <div className='relative'>
                 {
                     showMenu &&
                     <SideMenu setShowMenu={setShowMenu} />
                 }
             </div>
+            {
+                showMenu ?
+                <AiOutlineClose className='md:hidden text-xl font-bold cursor-pointer mr-2' onClick={() => setShowMenu(false)} />
+                :
             <AiOutlineMenu className='md:hidden text-xl font-bold cursor-pointer mr-2' onClick={() => setShowMenu(true)} />
-            <Link to={`/visthar`} className='flex cursor-pointer items-center justify-center md:text-3xl font-semibold w-fit'>
+}
+            <Link to={`/visthar`} className='flex cursor-pointer items-center justify-center md:text-3xl font-semibold text-xl w-fit text-[darkred]'>
                 VISTHAR
             </Link>
             <div className='hidden md:flex gap-10 md:text-[18px] text-[rgba(0,0,0,0.8)] flex-[2] relative'>
@@ -69,8 +74,11 @@ const Navbar = () => {
                     <input type='text' className='outline-none bg-[transparent] md:w-[250px]' placeholder='search an item' />
                 </div>
                 <AiOutlineSearch className='text-2xl md:hidden' />
-                <MdOutlinePerson2 className='text-2xl' />
-                <IoBagOutline className='text-2xl cursor-pointer' onClick={() => navigate('/cart')} />
+                <MdOutlinePerson2 className='text-2xl text-[grey]' />
+                <div className='relative'>
+                <IoBagOutline className='text-2xl cursor-pointer font-semibold text-[darkred]' onClick={() => navigate('/cart')} />
+                <div className='absolute text-[white] flex items-center justify-center top-[-5px] right-[-5px] bg-[red] w-[15px] h-[15px] rounded-full'>2</div>
+                </div>
             </div>
         </div>
     )

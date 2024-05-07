@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai'
 import Category from '../../components/categories/Category'
 import Product from '../../components/bestSellers/Product'
@@ -10,12 +10,17 @@ import CargerPoster from '../../components/posters/CargerPoster'
 import PowerBank from '../../components/posters/PowerBank'
 
 const images = [
+  "https://www.boat-lifestyle.com/cdn/shop/files/RS_Banner_WEB_1_1440x.jpg?v=1706770352",
     "https://www.boat-lifestyle.com/cdn/shop/files/Stone_Majestic_HP_Banner_WEB_1600x.jpg?v=1714287029",
-    "https://www.boat-lifestyle.com/cdn/shop/files/RS_Banner_WEB_1_1440x.jpg?v=1706770352",
     "https://www.boat-lifestyle.com/cdn/shop/files/IPL_HP_Banner_WEB_1_1440x.jpg?v=1712576793"
 ]
 
 const Visthar = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
+
     const [index, setIndex] = useState(0)
 
     const movePrev = () =>{
@@ -65,9 +70,8 @@ const Visthar = () => {
         <SliderImage />
         <SliderImage />
       </div> */}
-<div className='flex flex-wrap md:flex-nowrap md:px-8 justify-center items-center gap-4 md:mt-20 w-[98%] self-center ml-auto mr-auto md:overflow-x-scroll scrollbar-hd mb-20 md:my-24'>
-    <SliderImage />
-    <SliderImage />
+      <div className='flex md:hidden md:px-8 px-10 mt-6 font-semibold md:text-2xl text-lg mb-2'>Shop For LifeStyle</div>
+<div className='flex md:hidden flex-wrap md:flex-nowrap md:px-8 justify-center items-center gap-4 md:mt-20 w-[98%] self-center ml-auto mr-auto md:overflow-x-scroll scrollbar-hd mb-20 md:my-24'>
     <SliderImage />
     <SliderImage />
     <SliderImage />

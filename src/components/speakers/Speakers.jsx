@@ -24,7 +24,7 @@ const Speakers = () => {
             <img src='https://img.freepik.com/premium-photo/watch-with-black-face-black-face_905510-5596.jpg?w=740' alt='' className='w-[70%] h-[70%] rounded-3xl' />
         </div>
       </div>
-      <div className='flex items-center flex-wrap w-[90%] md:w-auto md:self-auto self-center justify-center md:gap-5 gap-2'>
+      <div className='flex items-center flex-wrap md:w-auto md:self-auto self-center justify-center md:gap-5 gap-2'>
         <Product img={"https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Stone_180.jpg?v=1702014281"}/>
         <Product img={"https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Stone_180.jpg?v=1702014281"}/>
         <Product img={"https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Stone_180.jpg?v=1702014281"}/>

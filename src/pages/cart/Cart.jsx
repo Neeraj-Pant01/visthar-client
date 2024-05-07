@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import CartItem from '../../components/cartItem/CartItem'
 
 const Cart = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
   return (
     <div className='min-h-screen md:px-16 py-10 relative'>
       <h1 className='text-3xl text-[rgba(0,0,0,0.7)] my-5 text-center'>YOUR CART ITEMS</h1>

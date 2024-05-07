@@ -7,31 +7,35 @@ import { IoNewspaperSharp } from "react-icons/io5";
 const f= [
     {
         icon:<FaShieldAlt />,
-        title: "Product Warrenty"
+        title: "Product Warrenty",
+        color:"green"
     },
     {
         icon:<LuReplace />,
-        title: "7 day Replcement"
+        title: "7 day Replcement",
+        color:"maroon"
     },
     {
         icon: <FaTruck />,
-        title:"Delivery Service"
+        title:"Delivery Service",
+        color:"lightblue"
     },
     {
         icon:<IoNewspaperSharp />,
-        title:"GST Billing"
+        title:"GST Billing",
+        color:"goldenrod"
     }
 ]
 
 const Features = () => {
   return (
-    <div className='flex items-center justify-center md:gap-16 gap-2 my-20'>
+    <div className='flex items-center justify-center md:gap-16 my-20 md:flex-nowrap flex-wrap gap-5'>
         {
             f.map((f,i)=>{
                 return (
-                    <div className='flex flex-col items-center gap-2 cursor-pointer justify-center' key={i}>
-                        <span className='md:text-7xl text-3xl font-bold text-[rgba(0,0,0,0.8)]'>{f.icon}</span>
-                        <span className='text-[grey] font-semibold md:text-xl text-sm text-center'>{f.title}</span>
+                    <div className='flex w-[30%] md:w-auto flex-col items-center gap-2 cursor-pointer justify-center' key={i}>
+                        <span style={{color:`lightgrey`}} className='md:text-7xl text-6xl font-bold'>{f.icon}</span>
+                        <span className='md:text-xl text-[12px] text-center text-[black]'>{f.title}</span>
                     </div>
                 )
             })

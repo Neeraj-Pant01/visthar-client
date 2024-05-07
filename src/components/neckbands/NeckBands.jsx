@@ -28,7 +28,7 @@ const NeckBands = () => {
             <span className='md:text-3xl text-xl'>Best</span>
             <span className='md:text-3xl text-xl font-semibold'>Sellers</span>
         </div>
-      <div className='flex items-center flex-wrap w-[90%] md:w-auto md:self-auto self-center justify-center md:gap-5 gap-2'>
+      <div className='flex items-center flex-wrap md:w-auto md:self-auto self-center justify-center md:gap-5 gap-2'>
         <Product img={"https://www.jiomart.com/images/product/original/rvgjws9ya7/jetbot-bullets-wireless-z-bass-edition-neckband-headphone-with-40-hr-playtime-bluetooth-headset-blue-in-the-ear-product-images-orvgjws9ya7-p598365533-2-202302140412.png?im=Resize=(420,420)"}/>
         <Product img={"https://www.jiomart.com/images/product/original/rvgjws9ya7/jetbot-bullets-wireless-z-bass-edition-neckband-headphone-with-40-hr-playtime-bluetooth-headset-blue-in-the-ear-product-images-orvgjws9ya7-p598365533-2-202302140412.png?im=Resize=(420,420)"}/>
         <Product img={"https://www.jiomart.com/images/product/original/rvgjws9ya7/jetbot-bullets-wireless-z-bass-edition-neckband-headphone-with-40-hr-playtime-bluetooth-headset-blue-in-the-ear-product-images-orvgjws9ya7-p598365533-2-202302140412.png?im=Resize=(420,420)"}/>

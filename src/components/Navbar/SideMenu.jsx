@@ -1,18 +1,18 @@
 import React, { useState } from 'react'
-import { AiFillCloseSquare } from 'react-icons/ai'
+import { AiFillCloseSquare, AiOutlineClose } from 'react-icons/ai'
 import Category from "../categories/Category"
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 import { shopcategories } from '../../data';
 import { useNavigate } from 'react-router-dom';
+import "./style.css"
 
 const SideMenu = ({ setShowMenu }) => {
   const [showCat, setShowCat] = useState(false)
   const navigate = useNavigate();
   return (
-    <div className='md:hidden flex flex-col fixed min-h-screen w-[70%] left-0 bg-[white] top-[80px] transition-all gap-5'>
+    <div className='slideIn md:hidden flex flex-col fixed min-h-screen w-[70%] left-0 bg-[white] top-[50px] transition-all gap-5'>
       <div className='flex items-end justify-end'>
-        <AiFillCloseSquare className='text-3xl rounded-lg' onClick={() => setShowMenu(false)} />
       </div>
       <div className='flex items-center justify-between px-4 font-semibold' onClick={() => setShowCat(!showCat)}>
         Categories
@@ -34,7 +34,7 @@ const SideMenu = ({ setShowMenu }) => {
       <div className='flex px-4 font-semibold' onClick={() =>{navigate(`/`)
         setShowMenu(false)
       }}>
-        Explore More
+        Explore Visthar
       </div>
       <div className='flex px-4 font-semibold' onClick={() =>{ navigate(`/cart`)
         setShowMenu(false)

@@ -30,11 +30,11 @@ const Footer = () => {
     <div className='flex flex-col'>
       <div className='flex flex-col md:flex-row justify-between px-8 bg-[#e7f0f5] py-10 md:px-16'>
         <div className=' flex flex-col md:justify-normal justify-center items-center md:items-start'>
-            <span className='md:text-7xl text-5xl'>Visthar</span>
+            <span className='md:text-7xl text-5xl text-[darkred]'>Visthar</span>
             <span className='md:text-2xl mt-2 font-semibold'>Subscribe TO Our Email Alerts</span>
             <div className='flex w-[80%] items-center bg-[white] rounded-lg mt-3 md:mt-0'>
             <input type='text'  className='bg-[white] py-3 px-5 border-0 outline-none rounded-lg' placeholder='enter your email address'/>
-            <FaCircleArrowRight className='cursor-pointer'/>
+            <FaCircleArrowRight className='cursor-pointer text-2xl'/>
             </div>
         </div>
 

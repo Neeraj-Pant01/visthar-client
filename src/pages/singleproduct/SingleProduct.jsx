@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { BsArrowLeftCircleFill } from "react-icons/bs";
 import { BsArrowRightCircleFill } from "react-icons/bs";
@@ -17,6 +17,10 @@ const images = [
 const SingleProduct = () => {
     const [currentindex, setCurrentIndex] = useState(0)
     const [starIndex, setStarIndex] = useState(0)
+
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
 
     const handleNext = (index) =>{
         if(index < images.length - 1){
